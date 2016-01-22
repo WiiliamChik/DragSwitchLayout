@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/detail_img"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center_vertical">
+
+        <!-- 标题 -->
+        <TextView
+                android:id="@+id/tv_good_detail_good_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="13dp"
+                android:text="Anna sui摇滚心情淡香水30ml"
+                android:textColor="@color/app_font_color_77"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom">
+
+            <!-- 售价 -->
+            <TextView
+                    android:id="@+id/tv_good_detail_shop_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="16dp"
+                    android:text="￥168.00"
+                    android:textColor="@color/app_font_color_2f"/>
+
+            <!-- 原价 -->
+            <TextView
+                    android:id="@+id/tv_good_detail_market_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="12dp"
+                    android:text="国内价：￥376.00"
+                    android:textColor="@color/app_font_color_77"/>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            <!-- 折扣 -->
+            <TextView
+                    android:id="@+id/tv_good_detail_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="14dp"
+                    android:textColor="@color/app_font_color_2f"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:background="@color/app_divider_line_bg_ee"/>
+
+    <!-- sku -->
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:id="@+id/tv_good_detail_select_sku_info"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_font_color_2f"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="请选择：规格"
+                android:textSize="13dp"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/common_more"/>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:background="@color/app_divider_line_bg_ee"/>
+
+    <!-- 物流信息 -->
+    <LinearLayout
+            android:id="@+id/ll_good_detail_shipping_info_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+            <!-- 配送费 区域 -->
+
+            <TextView
+                    android:id="@+id/tv_good_detail_shipping_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/app_font_color_2f"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="13dp"
+                    android:text="配送费：免费"/>
+
+            <!-- 行邮税 区域 -->
+            <TextView
+                    android:id="@+id/tv_good_detail_Tariff_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_font_color_2f"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textSize="13dp"
+                    android:text="行邮税：本商品适用税率为50%，若订单总税额≤1000，元则免征，直接下单可免税哦！"/>
+
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:src="@drawable/common_more"/>
+    </LinearLayout>
+
+    <!-- 上拉加载图文详情 -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            android:background="@color/app_divider_line_bg_ee"
+            android:gravity="center"
+            android:textColor="@color/app_font_color_2f"
+            android:textSize="12dp"
+            android:text="上拉查看图文详情"/>
+
+</LinearLayout>

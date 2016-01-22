@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="good_detail_bottom_operation_bar_height">36dp</dimen>
+    <dimen name="title_bar_height">52dp</dimen>
+</resources>

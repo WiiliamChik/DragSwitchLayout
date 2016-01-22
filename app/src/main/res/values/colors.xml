@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用 -->
+    <color name="app_hai_main_color">#2f2f2f</color>
+    <color name="transparent_main_color">#d12f2f2f</color>
+    <color name="app_hai_main_color_deep">#da3d69</color>
+    <color name="app_hai_tao_color">#fc714b</color>
+    <color name="app_hai_deep_tao_color">#eb5d36</color>
+    <color name="transparent_white_1">#cdffffff</color>
+    <color name="transparent_white_2">#26ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent_bg_white">#33ffffff</color>
+    <color name="deep_transparent_bg_black">#cd000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="alert_yellow">#fff3bb</color>
+
+    <color name="app_background_f4">#f4f4f4</color>
+    <color name="app_background_eb">#ebebeb</color>
+    <color name="app_background_invert">#000000</color>
+    <color name="app_background_ee0">#ee0066</color>
+    <color name="app_background_d60">#d6015c</color>
+
+    <color name="rippelColor">#FFFFFF</color>
+
+    <!-- font -->
+    <color name="app_font_color_c2">#c2c2c2</color>
+    <color name="app_font_color_a1">#a1a1a1</color>
+    <color name="app_font_color_77">#777777</color>
+    <color name="app_font_color_2f">#2f2f2f</color>
+    <color name="app_font_color_6c">#6c6c6c</color>
+    <color name="app_font_color_d6">#d6b176</color>
+    <color name="app_font_color_d6b176">#d6b176</color>
+
+    <!-- navigation bar -->
+    <color name="unselected_action_bar_text_color">#777777</color>
+
+    <!--listItem-->
+    <color name="app_item_background">#ffffffff</color>
+    <color name="app_item_background_invert">#ff151515</color>
+    <color name="app_item_press_background">#fff1f1f1</color>
+    <color name="app_item_press_background_invert">#ff393939</color>
+
+    <!--表单-->
+    <color name="app_separator_background">#ffdddddd</color>
+    <color name="app_separator_background_invert">#ff393939</color>
+    <color name="app_separator_strong_background">#ffdddddd</color>
+
+    <!-- divider -->
+    <color name="app_divider_bg">#eeeeee</color>
+    <color name="app_divider_line_bg_e2">#e2e2e2</color>
+    <color name="app_divider_line_bg_e8">#e8e8e8</color>
+    <color name="app_divider_line_bg_e97">#e97395</color>
+    <color name="app_divider_line_bg_2f">#2f2f2f</color>
+    <color name="app_divider_line_bg_ee">#eeeeee</color>
+
+    <!-- 我的页面 -->
+    <color name="login_button_nor_bg">#e03767</color>
+    <color name="login_button_press_bg">#ba0037</color>
+
+    <!-- 我的优惠码 -->
+    <color name="my_coupon_value">#f3497a</color>
+
+
+</resources>

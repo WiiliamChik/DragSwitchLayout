@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height">
+
+    <!-- main container -->
+    <RelativeLayout
+            android:id="@+id/ll_good_detail_header_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        <!-- left container -->
+        <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp">
+
+            <ImageView
+                    android:id="@+id/iv_good_detail_normal_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:focusable="false"
+                    android:src="@drawable/common_back_black"/>
+        </LinearLayout>
+
+        <!-- center container -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+            <!-- 自动切换标题的布局 -->
+            <com.williamchik.dragswitchlayout.AutoSwitchLayout
+                    android:id="@+id/good_detail_auto_switch_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:text="商品详情"
+                        android:textColor="@color/app_font_color_2f"
+                        android:textSize="16dp"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:text="图文详情"
+                        android:textColor="@color/app_font_color_2f"
+                        android:textSize="16dp"/>
+            </com.williamchik.dragswitchlayout.AutoSwitchLayout>
+        </LinearLayout>
+
+        <!-- right container -->
+        <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|right"
+                android:paddingRight="9dp"
+                android:paddingLeft="9dp">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:visibility="gone"/>
+        </LinearLayout>
+
+        <!-- divider -->
+        <View
+                android:id="@+id/v_good_detail_header_divider"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/app_hai_main_color"/>
+    </RelativeLayout>
+
+    <!-- back button -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp">
+
+        <ImageView
+                android:id="@+id/iv_good_detail_oval_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_circle_solid_deep_transparent_bg_black"
+                android:padding="12dp"
+                android:focusable="false"
+                android:src="@drawable/common_back_white"/>
+    </LinearLayout>
+</RelativeLayout>
